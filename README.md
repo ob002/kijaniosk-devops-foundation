@@ -4,7 +4,7 @@ Welcome to the **KijaniKiosk DevOps Starter Kit**. This repository serves as the
 
 It documents the essential infrastructure thinking, security principles, and collaboration workflows required before the system scales to real customers.
 
-## 📁 Project Structure
+## Project Structure
 
 The core documentation is located in the `starter-kit/` directory:
 
@@ -14,7 +14,7 @@ The core documentation is located in the `starter-kit/` directory:
 - `least-privilege.md` - Security: IAM role and policy design
 - `network-topology.png` - Network: Public/Private subnet diagram
 
-## 🏗️ Architecture Highlights
+## Architecture Highlights
 
 * **Cloud Service Model:** We selected **IaaS** to maintain granular control over network segmentation, custom IAM policies, and horizontal scaling.
 * **Reliability:** The system is designed across multiple Availability Zones (Multi-AZ) within a primary region (e.g., `us-east-1`) to ensure high availability.
