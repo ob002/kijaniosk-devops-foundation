@@ -2,7 +2,7 @@
 
 Welcome to the KijaniKiosk DevOps Starter Kit. This repository contains the foundational architecture documentation and infrastructure reasoning required before the platform launches.
 
-## 📦 Deliverables Checklist
+## Deliverables Checklist
 
 All required files are located in the `starter-kit/` directory, matching the assignment rubric:
 
@@ -12,7 +12,7 @@ All required files are located in the `starter-kit/` directory, matching the ass
 - [x] **`least-privilege.md`**: Defines an IAM role and JSON policy enforcing the principle of least privilege.
 - [x] **`network-topology.png`**: Visual diagram showing network segmentation (Public vs. Private subnets).
 
-## 🔄 Git Collaboration Workflow
+## Git Collaboration Workflow
 
 This project strictly follows a collaborative Git workflow as required:
 1. **`main`**: Production-ready branch (the branch you are currently viewing).
@@ -27,4 +27,3 @@ This project strictly follows a collaborative Git workflow as required:
 3. Check the **Pull requests** tab to verify the collaborative Git workflow requirement.
 
 ---
-*Submitted for Week 2 Independent Project Review.*
