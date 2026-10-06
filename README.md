@@ -1,38 +1,30 @@
-# KijaniKiosk DevOps Foundation
+# KijaniKiosk DevOps Foundation - Starter Kit
 
-Welcome to the **KijaniKiosk DevOps Starter Kit**. This repository serves as the technical blueprint and engineering foundation for the early architecture of the KijaniKiosk online platform. 
+Welcome to the KijaniKiosk DevOps Starter Kit. This repository contains the foundational architecture documentation and infrastructure reasoning required before the platform launches.
 
-It documents the essential infrastructure thinking, security principles, and collaboration workflows required before the system scales to real customers.
+## 📦 Deliverables Checklist
 
-## Project Structure
+All required files are located in the `starter-kit/` directory, matching the assignment rubric:
 
-The core documentation is located in the `starter-kit/` directory:
+- [x] **`delivery-notes.md`**: Explains DevOps mindset (Flow, Feedback, Continuous Learning).
+- [x] **`cloud-model.md`**: Justifies the choice of IaaS over PaaS/SaaS for network control and scalability.
+- [x] **`region-az.md`**: Details region selection and Multi-Availability Zone (Multi-AZ) reliability design.
+- [x] **`least-privilege.md`**: Defines an IAM role and JSON policy enforcing the principle of least privilege.
+- [x] **`network-topology.png`**: Visual diagram showing network segmentation (Public vs. Private subnets).
 
-- `delivery-notes.md` - DevOps mindset: Flow, Feedback, and Learning
-- `cloud-model.md` - Cloud reasoning: Justification for IaaS
-- `region-az.md` - Reliability: Region selection and Multi-AZ design
-- `least-privilege.md` - Security: IAM role and policy design
-- `network-topology.png` - Network: Public/Private subnet diagram
+## 🔄 Git Collaboration Workflow
 
-## Architecture Highlights
+This project strictly follows a collaborative Git workflow as required:
+1. **`main`**: Production-ready branch (the branch you are currently viewing).
+2. **`develop`**: Integration branch.
+3. **`feature/starter-kit-files`**: Feature branch where all documentation was authored.
+4. **Pull Requests**: All changes were merged into `develop` via a Pull Request to ensure peer review. *(See the "Pull requests" tab at the top of this repository).*
 
-* **Cloud Service Model:** We selected **IaaS** to maintain granular control over network segmentation, custom IAM policies, and horizontal scaling.
-* **Reliability:** The system is designed across multiple Availability Zones (Multi-AZ) within a primary region (e.g., `us-east-1`) to ensure high availability.
-* **Security (Least Privilege):** Application components are assigned strict IAM roles. For example, the image-serving component only has `s3:GetObject` permissions for a specific bucket.
-* **Network Segmentation:** The architecture utilizes a Virtual Private Cloud (VPC) with distinct Public and Private subnets to isolate public-facing load balancers from internal servers.
+##  How to Review
 
-##  Git Collaboration Workflow
+1. Ensure you are viewing the **`main`** branch (selected in the dropdown at the top left of this page).
+2. Click on the **`starter-kit`** folder to view all 5 required deliverable files.
+3. Check the **Pull requests** tab to verify the collaborative Git workflow requirement.
 
-This project follows a standard **GitHub Flow** branching strategy:
-
-1. **`main`**: The production-ready branch.
-2. **`develop`**: The integration branch where features are merged.
-3. **`feature/*`**: Short-lived branches for specific tasks (e.g., `feature/starter-kit-files`).
-
-All changes are submitted via **Pull Requests (PRs)** from a feature branch into `develop`, ensuring code review and continuous feedback.
-
-##  DevOps Principles in Action
-
-* **Flow:** Small, frequent commits and automated PR checks reduce bottlenecks.
-* **Feedback:** Peer reviews via Pull Requests provide immediate feedback on architectural decisions.
-* **Learning:** This repository acts as a living document, ensuring future engineers understand the "why" behind our infrastructure choices.
+---
+*Submitted for Week 2 Independent Project Review.*
